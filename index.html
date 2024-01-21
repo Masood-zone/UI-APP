@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do App</title>
-    <link rel="stylesheet" href="main.css">
-    
-</head>
-<body>
 
-          <div class="container">
-            <h1>To-Do App</h1>
-            <div class="input-container">
-              <input type="text" id="taskInput" placeholder="Enter a task...">
-              <button onclick="addTask()">Add Task</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<div class="">
+
+
+  <div class="flex flex-col items-center justify-center">
+    <div class="w-[450px] text-center bg-white py-5 px-5 my-10">
+      <h1 class="text-4xl font-bold">TODO APP</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nemo dolor rerum sequi incidunt bland
+        itiis repellendus perferendis reiciendis itaque eaque eligendi beatae corporis possimus explicabo,
+        natus ipsa. Adipisci, sed ipsam?</p>
+    </div>
+    <div class="flex justify-between gap-11">
+      <div class="w-[250px]   overflow-hidden">
+        <h5 class="font-bold my-3">Add items</h5>
+        <div class="main">
+          <input type="text" class="w-full py-1 px-3 border-2 rounded-md border-blue-300" id="text" placeholder="enter your text"> <br>
+          <button class="bg-blue-400 text-white font-bold px-3 rounded-md border-2 my-5">Submit</button>
+        </div>
+      </div>
+      <div class="w-[200px] ">
+        <h5 class="font-bold my-3">Item List</h5>
+        <ul class="">
+          <li class="flex items-center justify-between bg-white rounded-md border-2 border-gray-300 p-1">
+            Swimming
+            <div class="flex gap-2">
+              <img src="./assets/edit.svg" class="w-4"/>
+              <img src="./assets/delete.svg" class="w-4"/>
             </div>
-            <ul id="taskList">
-            </ul>
-          </div>
-        
-    
+          </li>
+
+          <li class="flex items-center justify-between bg-white rounded-md border-2 border-gray-300 p-1">
+            Reading Books
+            <div class="flex gap-2">
+              <img src="./assets/edit.svg" class="w-4"/>
+              <img src="./assets/delete.svg" class="w-4"/>
+            </div>
+          </li>
+          
+          <li class="flex items-center justify-between bg-white rounded-md border-2 border-gray-300 p-1">
+            Assignment
+            <div class="flex gap-2">
+              <img src="./assets/edit.svg" class="w-4"/>
+              <img src="./assets/delete.svg" class="w-4"/>
+            </div>
+          </li>
+
+          <li class="flex items-center justify-between bg-white rounded-md border-2 border-gray-300 p-1">
+            friends Meetup
+            <div class="flex gap-2">
+              <img src="./assets/edit.svg" class="w-4"/>
+              <img src="./assets/delete.svg" class="w-4"/>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
 </body>
-<script src="index.js"></script>
+
 </html>
