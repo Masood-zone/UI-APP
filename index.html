@@ -11,8 +11,9 @@
   <body>
     <div class="">
       <div class="flex flex-col items-center justify-center">
-        <div class="w-[450px] text-center bg-white py-5 px-5 my-10">
-          <h1 class="text-4xl font-bold">TODO APP</h1>
+        <!-- Header -->
+        <div class="w-[600px] rounded-md text-center bg-white py-5 px-5 my-10">
+          <h1 class="text-5xl font-bold">TODO APP</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nemo
             dolor rerum sequi incidunt bland itiis repellendus perferendis
@@ -20,7 +21,9 @@
             natus ipsa. Adipisci, sed ipsam?
           </p>
         </div>
+        <!-- Add items and Items List -->
         <div class="flex justify-between gap-11">
+          <!-- Add items form -->
           <div class="w-[250px] overflow-hidden">
             <h5 class="font-bold my-3">Add items</h5>
             <div class="main">
@@ -30,19 +33,19 @@
                 type="text"
                 class="w-full py-1 px-3 border-2 rounded-md border-blue-300"
                 id="text"
-                placeholder="enter your text"
               />
               <br />
               <button
                 onclick="addTask()"
-                class="text-white bg-blue-400 font-bold px-3 rounded-md border-2 my-5"
+                class="text-white bg-[#007AFF] font-bold px-5 py-2 rounded-md border-2 my-5"
               >
                 Submit
               </button>
             </div>
           </div>
+          <!-- Item list -->
           <div class="w-[200px]">
-            <h5 class="font-bold my-3">Item List</h5>
+            <h5 class="font-bold my-1">Item List</h5>
             <ul id="list" class="list-none"></ul>
           </div>
         </div>
